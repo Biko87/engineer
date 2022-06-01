@@ -1,0 +1,131 @@
+<%- include ("layouts/header") %> 
+
+
+<main class="main-content">
+    <!--== Start Page Header Area Wrapper ==-->
+    <div class="page-header-area sec-overlay sec-overlay-black" data-bg-img="./img/photos/bg2.jpg">
+      <div class="container pt--0 pb--0">
+        <div class="row">
+          <div class="col-12">
+            <div class="page-header-content">
+              <h2 class="title">Página de Registro</h2>
+              <nav class="breadcrumb-area">
+                <ul class="breadcrumb justify-content-center">
+                  <li><a href="/">Inicio</a></li>
+                  <li class="breadcrumb-sep">//</li>
+                  <li>Registro</li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--== End Page Header Area Wrapper ==-->
+
+    <!--== Start Login Area Wrapper ==-->
+    <section class="account-login-area">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-7 col-xl-6">
+            <div class="login-register-form-wrap register-form-wrap">
+              <div class="login-register-form">
+                <div class="form-title">
+                  <h4 class="title">Registrar Ahora</h4>
+                </div>
+                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="candidate-tab" data-bs-toggle="pill" data-bs-target="#candidate" type="button" role="tab" aria-controls="candidate" aria-selected="true"><i class="fa-solid fa-user-tie"></i> Candidato</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="employer-tab" data-bs-toggle="pill" data-bs-target="#employer" type="button" role="tab" aria-controls="employer" aria-selected="false"><i class="fa-solid fa-briefcase"></i> Empleador</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="tab-pane fade show active" id="candidate" role="tabpanel" aria-labelledby="candidate-tab">
+                    <form action="#">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="form-group">
+                            <input class="form-control" type="email" placeholder="Correo">
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group">
+                            <input class="form-control" type="password" placeholder="Contraseña">
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group">
+                            <input class="form-control" type="password" placeholder="Confirmar Contraseña">
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group">
+                            <div class="remember-forgot-info">
+                              <div class="remember">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">Acepta nuestros términos, condiciones y política de privacidad.</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group">
+                            <button type="button" class="btn-theme">Registrar Ahora</button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="tab-pane fade" id="employer" role="tabpanel" aria-labelledby="employer-tab">
+                    <form action="#">
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="form-group">
+                            <input class="form-control" type="email" placeholder="Correo">
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group">
+                            <input class="form-control" type="password" placeholder="Contraseña">
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group">
+                            <input class="form-control" type="password" placeholder="Confirmar Contraseña">
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group">
+                            <div class="remember-forgot-info">
+                              <div class="remember">
+                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <label class="form-check-label" for="defaultCheck1">Acepta nuestros términos, condiciones y política de privacidad.</label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group">
+                            <button type="button" class="btn-theme">Registrar Ahora</button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="login-register-form-info">
+                  <p>¿Tienes una cuenta? <a href="/login">Ingresar</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--== End Login Area Wrapper ==-->
+  </main>
+
+
+<%- include ("layouts/footer") %> 

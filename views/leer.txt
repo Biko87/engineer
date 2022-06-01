@@ -1,0 +1,2 @@
+Solo archivos ejs
+Es decir, html.
