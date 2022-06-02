@@ -43,28 +43,28 @@
                 </ul>
                 <div class="tab-content" id="pills-tabContent">
                   <div class="tab-pane fade show active" id="candidate" role="tabpanel" aria-labelledby="candidate-tab">
-                    <form action="#">
+                    <form action="/registro" method="POST">
                       <div class="row">
                         <div class="col-12">
                           <div class="form-group">
-                            <input class="form-control" type="email" placeholder="Correo">
+                            <input class="form-control" type="text" name="nombre" placeholder="Nombres y Apellidos Completo">
                           </div>
                         </div>
                         <div class="col-12">
                           <div class="form-group">
-                            <input class="form-control" type="password" placeholder="Contraseña">
+                            <input class="form-control" type="email" name="correo" placeholder="Correo">
                           </div>
                         </div>
                         <div class="col-12">
                           <div class="form-group">
-                            <input class="form-control" type="password" placeholder="Confirmar Contraseña">
+                            <input class="form-control" type="password" name="pass" placeholder="Contraseña">
                           </div>
                         </div>
                         <div class="col-12">
                           <div class="form-group">
                             <div class="remember-forgot-info">
                               <div class="remember">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <!-- <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> -->
                                 <label class="form-check-label" for="defaultCheck1">Acepta nuestros términos, condiciones y política de privacidad.</label>
                               </div>
                             </div>
@@ -83,6 +83,11 @@
                       <div class="row">
                         <div class="col-12">
                           <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Nombres y Apellidos Completo">
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <div class="form-group">
                             <input class="form-control" type="email" placeholder="Correo">
                           </div>
                         </div>
@@ -93,14 +98,9 @@
                         </div>
                         <div class="col-12">
                           <div class="form-group">
-                            <input class="form-control" type="password" placeholder="Confirmar Contraseña">
-                          </div>
-                        </div>
-                        <div class="col-12">
-                          <div class="form-group">
                             <div class="remember-forgot-info">
                               <div class="remember">
-                                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                <!-- <input class="form-check-input" type="checkbox" value="" id="defaultCheck1"> -->
                                 <label class="form-check-label" for="defaultCheck1">Acepta nuestros términos, condiciones y política de privacidad.</label>
                               </div>
                             </div>
@@ -108,7 +108,7 @@
                         </div>
                         <div class="col-12">
                           <div class="form-group">
-                            <button type="button" class="btn-theme">Registrar Ahora</button>
+                            <button type="submit" class="btn-theme">Registrar Ahora</button>
                           </div>
                         </div>
                       </div>
