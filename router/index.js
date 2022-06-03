@@ -50,11 +50,10 @@ router.post('/registro', async (req, res)=>{
             }else{            
           res.render('registro', {
             alert: true,
-            alertTitle: "¡Registro Éxitoso!",
-            alertMessage: "¡Te has registrado con Éxito!",
+            alertTitle: "¡Te has registrado con Éxito!",
             alertIcon:'success',
             showConfirmButton: false,
-            timer: 5000,
+            timer: 4000,
             ruta: ''
           });
                 //res.redirect('/');         
