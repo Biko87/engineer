@@ -1,43 +1,31 @@
 // 1 - Invocamos a Express
 const express = require('express');
-const app = express();
-const myconnection = require('express-myconnection');
-const mysql = require('mysql');
 const session = require('express-session');
-const bodyParser = require('body-parser');
-const loginRoutes = require('./router/login');
-
-app.use('/', loginRoutes);
-
+const app = express();
 const port = process.env.PORT || 5000;
 
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
-app.use(bodyParser.json());
+// Para poder capturar los datos del formulario (sin urlencoded nos devuelve "undefined")
+app.use(express.urlencoded({extended:false}));
+//además le decimos a express que vamos a usar json
+app.use(express.json());
 
-app.use(myconnection(mysql, {
-  host: 'localhost',
-  user: 'root',
-  password: '',
-  port: 3306,
-  database: 'buscoingeniero'
- }, 'single'));
+// Invocamos a dotenv
+const dotenv = require('dotenv');
+dotenv.config({ path: './env/.env'});
 
- app.use(session({
+// El directorio public
+app.use(express.static(__dirname + "/public"));
+
+//Establecemos el motor de plantillas
+app.set("view engine", "ejs");
+app.set("views", __dirname + "/views");
+
+// variables de session
+app.use(session({
 	secret: 'secret',
 	resave: true,
 	saveUninitialized: true
 }));
-
-
-//4 - El directorio public
-app.use(express.static(__dirname + "/public"));
-
-//5 - Establecemos el motor de plantillas
-app.set("view engine", "ejs");
-app.set("views", __dirname + "/views");
-
 
 //Rutas web
 app.use('/', require('./router/index'));
