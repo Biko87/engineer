@@ -32,16 +32,16 @@
                 <div class="form-title">
                   <h4 class="title">Iniciar Sesión</h4>
                 </div>
-                <form action="auth" method="post">
+                <form action="/auth" method="post">
                   <div class="row">
                     <div class="col-12">
                       <div class="form-group">
-                        <input class="form-control" type="email" placeholder="Correo">
+                        <input class="form-control" type="email" name="correo" placeholder="Correo">
                       </div>
                     </div>
                     <div class="col-12">
                       <div class="form-group">
-                        <input class="form-control" type="password" placeholder="Contraseña">
+                        <input class="form-control" type="password" name="password" placeholder="Contraseña">
                       </div>
                     </div>
                     <div class="col-12">
@@ -59,7 +59,7 @@
                     </div>
                     <div class="col-12">
                       <div class="form-group">
-                        <button type="button" class="btn-theme">Ingresar</button>
+                        <button type="submit" class="btn-theme">Ingresar</button>
                       </div>
                     </div>
                   </div>
